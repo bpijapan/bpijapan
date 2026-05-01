@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>予約｜BPI JAPAN</title>
+  <meta name="description" content="BPI JAPANのレッスン予約ページ。BPI 90分コース、コース相談の予約はこちらから。無料カウンセリングはInstagram DMで受け付けています。" />
+  <meta name="theme-color" content="#0f0b12" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="予約｜BPI JAPAN" />
+  <meta property="og:description" content="ミスコン・ミスターコンテスト専門コーチングの予約ページ。BPI 90分コースとコース相談はCal.comからご予約いただけます。" />
+  <meta property="og:image" content="assets/og-image.svg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="booking-page">
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html#top" aria-label="BPI JAPAN トップへ">
+      <span class="brand-mark">BPI</span>
+      <span class="brand-text">Beauty Pageant Icon</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html#about">Vision</a>
+      <a href="index.html#program">Program</a>
+      <a href="index.html#price">Price</a>
+      <a href="index.html#trainers">Trainers</a>
+      <a href="index.html#flow">Flow</a>
+      <a class="nav-cta" href="#cal-booking">予約する</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="booking-hero section-dark">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container booking-hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Booking / Cal.com</p>
+          <h1>まずは、<br>現在地を<br><span>一緒に整理</span>する。</h1>
+          <p class="lead">大会までの期間、今の課題、目指すステージに合わせて、必要な準備を最短ルートで設計します。下のメニューから希望内容を選び、空き時間を予約してください。無料カウンセリングはInstagram DMで受け付けています。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#cal-booking">空き時間を見る</a>
+            <a class="button ghost" href="https://www.instagram.com/bpi_japan/" data-instagram-link target="_blank" rel="noopener">Instagram DMで無料相談</a>
+          </div>
+        </div>
+        <div class="booking-panel reveal" aria-label="予約前の案内">
+          <p class="panel-label">Before Booking</p>
+          <h2>迷ったらInstagram DMへ。</h2>
+          <ul class="check-list">
+            <li>初挑戦で何から始めるか相談したい</li>
+            <li>大会までの準備スケジュールを知りたい</li>
+            <li>自分に必要なレッスンを整理したい</li>
+          </ul>
+          <p class="booking-mini-note">無料カウンセリングはInstagram DMで受け付けています。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-menu section-muted">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Choose a Menu</p>
+          <h2>予約メニュー</h2>
+          <p class="section-sub">BPI 90分コースとコース相談は、このページ内のCal.comカレンダーから予約できます。</p>
+        </div>
+        <div class="booking-card-grid three-cards">
+          <article class="booking-card reveal" data-booking-card="instagram">
+            <p class="plan-label">Free Consultation</p>
+            <h3>無料カウンセリング</h3>
+            <p>初回のご相談はInstagram DMで受け付けています。大会予定や現在の悩みを気軽に送ってください。</p>
+            <a class="button small" href="https://www.instagram.com/bpi_japan/" data-instagram-link target="_blank" rel="noopener">Instagram DMで相談</a>
+          </article>
+          <article class="booking-card featured reveal" data-booking-card="lesson">
+            <p class="plan-label">Lesson</p>
+            <h3>BPI 90分コース</h3>
+            <p>ウォーキング、スピーチ、姿勢、表情など、課題に合わせて90分で集中的に磨きます。</p>
+            <button class="button primary small booking-select" type="button" data-cal-event="lesson">このメニューを予約</button>
+          </article>
+          <article class="booking-card reveal" data-booking-card="course">
+            <p class="plan-label">Course</p>
+            <h3>コース相談</h3>
+            <p>4回・8回・12回など、本番まで伴走するプランを相談したい方向けです。</p>
+            <button class="button small booking-select" type="button" data-cal-event="course">このメニューを予約</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cal-booking" class="section cal-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Select Date</p>
+          <h2 data-selected-title>BPI 90分コースを予約</h2>
+          <p class="section-sub" data-selected-description>下のカレンダーから希望日時を選択してください。</p>
+        </div>
+
+        <div class="setup-alert reveal" data-cal-setup-alert>
+          <strong>Cal.comリンク未設定です。</strong>
+          <span><code>booking-config.js</code> の <code>username</code> と <code>slug</code> を確認してください。</span>
+        </div>
+
+        <div class="cal-shell reveal">
+          <div id="my-cal-inline" class="cal-inline" aria-live="polite"></div>
+        </div>
+
+        <div class="booking-support reveal">
+          <p>日時が合わない場合や、どのメニューを選べばよいか迷う場合はInstagram DMからご相談ください。</p>
+          <a class="button" href="https://www.instagram.com/bpi_japan/" data-instagram-link target="_blank" rel="noopener">Instagram DMで問い合わせる</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html#top"><span class="brand-mark">BPI</span><span class="brand-text">Beauty Pageant Icon</span></a>
+        <p>Beauty Pageant Icon JAPAN</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#program">Program</a>
+        <a href="index.html#price">Price</a>
+        <a href="index.html#trainers">Trainers</a>
+        <a href="#cal-booking">Reserve</a>
+      </div>
+    </div>
+    <p class="copyright">© <span data-year></span> BPI JAPAN. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="booking-config.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>
